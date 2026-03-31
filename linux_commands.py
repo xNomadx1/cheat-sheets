@@ -10,13 +10,13 @@ commands = """
 	- cd ~ - Go to the home directory.
 	- mkdir <dir> - Create a new directory.
 	- mkdir -p <dir>/<subdir> - Create nested directories in one command.
-	- rmdir <dir> - Remove an empty directory.
+	- *rmdir <dir> - Remove an empty directory.
 	- touch <file> - Create an empty file.
 	- cp <src> <dest> - Copy a file.
 	- cp -r <src> <dest> - Copy a directory recursively.
 	- mv <src> <dest> - Move or rename a file.
-	- rm <file> - Delete a file.
-	- rm -r <dir> - Delete a directory and its contents.
+	- *rm <file> - Delete a file.
+	- *rm -r <dir> - Delete a directory and its contents.
 	- ln -s <target> <link> - Create a symbolic link.
 	- file <name> - Show a file's type.
 	- stat <file> - Show detailed file metadata.
@@ -69,7 +69,7 @@ commands = """
 	- passwd - Change your password.
 	- sudo useradd -m <user> - Create a new user with a home directory.
 	- sudo usermod -aG <group> <user> - Add a user to a group.
-	- sudo userdel -r <user> - Delete a user and their home directory.
+	- *sudo userdel -r <user> - Delete a user and their home directory.
 
 6. Processes & System Info
 	- ps aux - List running processes.
@@ -136,7 +136,7 @@ commands = """
 	- sudo apt update - Refresh package lists.
 	- sudo apt upgrade - Install available package upgrades.
 	- sudo apt install <package> - Install a package.
-	- sudo apt remove <package> - Remove a package.
+	- *sudo apt remove <package> - Remove a package.
 	- sudo apt autoclean - Remove cached package files that can no longer be downloaded.
 	- apt search <package> - Search for a package.
 	- sudo dnf install <package> - Install a package on Fedora/RHEL systems.

@@ -26,7 +26,7 @@ commands = """
 	- git checkout <branch-name> - Switch branches using the older command form.
 	- git checkout -b <branch-name> - Create and switch using the older command form.
 	- git branch -d <branch-name> - Delete a merged local branch.
-	- git branch -D <branch-name> - Force delete a local branch.
+	- *git branch -D <branch-name> - Force delete a local branch.
 
 4. Merging, Rebasing & Cherry-Picking
 	- git merge <branch-name> - Merge another branch into the current branch.
@@ -44,7 +44,7 @@ commands = """
 	- git pull --rebase - Fetch and rebase instead of merging.
 	- git push origin <branch-name> - Push a branch to a remote.
 	- git push -u origin <branch-name> - Push and set upstream tracking.
-	- git push origin --delete <branch-name> - Delete a remote branch.
+	- *git push origin --delete <branch-name> - Delete a remote branch.
 
 6. History & Inspection
 	- git log - Show commit history.
@@ -63,18 +63,18 @@ commands = """
 	- git stash show -p stash@{0} - Show the patch stored in a stash.
 	- git stash pop - Apply the latest stash and remove it.
 	- git stash apply stash@{0} - Apply a specific stash without deleting it.
-	- git stash drop stash@{0} - Delete one stash entry.
-	- git stash clear - Remove all stash entries.
+	- *git stash drop stash@{0} - Delete one stash entry.
+	- *git stash clear - Remove all stash entries.
 
 8. Undoing & Recovery
-	- git restore <file> - Discard unstaged changes in a file.
+	- *git restore <file> - Discard unstaged changes in a file.
 	- git restore --staged <file> - Unstage a file but keep working tree changes.
-	- git restore --staged --worktree <file> - Discard both staged and unstaged changes.
+	- *git restore --staged --worktree <file> - Discard both staged and unstaged changes.
 	- git reset HEAD <file> - Unstage a file using the older command form.
 	- git reset --soft HEAD~1 - Undo the last commit but keep changes staged.
-	- git reset --hard HEAD~1 - Undo the last commit and discard changes.
+	- *git reset --hard HEAD~1 - Undo the last commit and discard changes.
 	- git reflog - Show recent HEAD movements for recovery.
-	- git reset --hard <commit-id> - Reset to a specific commit with data loss.
+	- *git reset --hard <commit-id> - Reset to a specific commit with data loss.
 
 9. Tags, Cleanup & Maintenance
 	- git tag - List tags.
@@ -82,7 +82,7 @@ commands = """
 	- git tag -a <version> -m "message" - Create an annotated tag.
 	- git push --tags - Push all tags to the remote.
 	- git clean -n - Preview untracked files that would be removed.
-	- git clean -fd - Remove untracked files and directories.
+	- *git clean -fd - Remove untracked files and directories.
 	- git gc - Clean up unnecessary files and optimize the local repository.
 	- git fsck - Check repository integrity.
 """

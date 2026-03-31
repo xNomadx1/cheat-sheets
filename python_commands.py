@@ -13,7 +13,7 @@ commands = """
 	- python3 -m pip --version - Show the pip version tied to Python 3.
 	- python3 -m pip install <package> - Install a package.
 	- python3 -m pip install --upgrade <package> - Upgrade a package.
-	- python3 -m pip uninstall <package> - Remove a package.
+	- *python3 -m pip uninstall <package> - Remove a package.
 	- python3 -m pip list - List installed packages.
 	- python3 -m pip freeze - Show installed packages in requirements format.
 	- python3 -m pip show <package> - Show details about an installed package.
@@ -27,7 +27,7 @@ commands = """
 	- which python - Show which Python is active inside the venv.
 	- python --version - Show the active Python version inside the venv.
 	- python -m pip list - List installed packages in the active venv.
-	- rm -r .venv - Delete the virtual environment directory.
+	- *rm -r .venv - Delete the virtual environment directory.
 
 4. Builds, Checks & Packaging
 	- python3 -m py_compile file.py - Check that a Python file compiles.
