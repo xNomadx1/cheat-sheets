@@ -16,7 +16,9 @@ Small command reference sheets for common tools and workflows.
 Run any sheet with Python:
 
 ```bash
+python3 bash_commands.py
 python3 cron_commands.py
+python3 linux_commands.py
 python3 git_commands.py
 python3 python_commands.py
 python3 rust_commands.py
