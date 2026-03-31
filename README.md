@@ -5,6 +5,7 @@ Small command reference sheets for common tools and workflows.
 ## Files
 
 - `bash_commands.py` - Basic shell navigation, files, redirection, variables, shortcuts, and jobs.
+- `cron_commands.py` - Cron syntax, installing jobs, common schedules, logging, and troubleshooting.
 - `linux_commands.py` - General Linux commands for files, processes, networking, services, storage, and packages.
 - `git_commands.py` - Git setup, staging, branches, remotes, history, stash, recovery, and maintenance.
 - `python_commands.py` - Python commands for running code, environments, packages, testing, formatting, and packaging.
@@ -15,6 +16,7 @@ Small command reference sheets for common tools and workflows.
 Run any sheet with Python:
 
 ```bash
+python3 cron_commands.py
 python3 git_commands.py
 python3 python_commands.py
 python3 rust_commands.py
