@@ -1,5 +1,3 @@
-commands = """
-
 1. Setup & Configuration
 	- git --version - Show the installed Git version.
 	- git config --global user.name "Your Name" - Set your global username.
@@ -85,6 +83,3 @@ commands = """
 	- *git clean -fd - Remove untracked files and directories.
 	- git gc - Clean up unnecessary files and optimize the local repository.
 	- git fsck - Check repository integrity.
-"""
-
-print(commands)

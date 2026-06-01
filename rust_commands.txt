@@ -1,5 +1,3 @@
-commands = """
-
 1. Running Rust
 	- rustc main.rs - Compile a Rust source file into a binary.
 	- rustc main.rs -o app - Compile and write the output binary as app.
@@ -72,6 +70,3 @@ commands = """
 	- cargo login <token> - Save your crates.io API token locally.
 	- cargo package - Create a distributable crate package.
 	- cargo publish - Publish the crate to crates.io.
-"""
-
-print(commands)

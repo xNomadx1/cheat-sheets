@@ -1,5 +1,3 @@
-commands = """
-
 1. Inspect Existing Cron Jobs
 	- crontab -l - List cron jobs for the current user.
 	- sudo crontab -l - List cron jobs for root.
@@ -86,6 +84,3 @@ commands = """
 	- Wrap complex logic in a script instead of putting long pipelines directly in crontab.
 	- Quote carefully and remember that % has special meaning in crontab unless escaped as \\%.
 	- Run the command manually first before scheduling it.
-"""
-
-print(commands)
