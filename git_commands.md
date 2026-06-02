@@ -83,3 +83,30 @@
 	- *git clean -fd - Remove untracked files and directories.
 	- git gc - Clean up unnecessary files and optimize the local repository.
 	- git fsck - Check repository integrity.
+
+	# Starting a new standalone PR branch.
+	
+	- git switch master
+	- git fetch upstream
+	- git pull --ff-only upstream master
+	- git push origin master
+	- git status --short --branch
+	- git switch -c <your-new-branch-name>
+
+	# Fixing review feedback in a one-commit PR.
+
+	- git add path/to/file
+  	- git commit --amend --no-edit
+	- git push --force-with-lease
+
+	# Fixing review feedback in a multi-commit PR.
+
+	- git add path/to/file
+	- git commit -m "fixup! Original commit title"
+	- git rebase -i --autosquash origin/master
+	- git push --force-with-lease
+
+	# Remotes
+
+	- upstream = the dev's repo
+	- origin = your fork
