@@ -77,6 +77,7 @@
 	- pkill <name> - Kill processes by name.
 	- kill <pid> - Stop a process by PID.
 	- kill -9 <pid> - Force kill a process.
+	- hostname -I - Shows network IP and Public IP
 	- uptime - Show how long the system has been running.
 	- uname -a - Show kernel and system information.
 	- hostname - Show the system hostname.
