@@ -8,7 +8,8 @@
 	- python3 -m site - Show Python site-packages and related paths.
 
 2. Packages & pip
-	- python3 -m pip --version - Show the pip version tied to Python 3.
+	- python3 -m pip --version
+	- python3 -m pip install --upgrade pip
 	- python3 -m pip install <package> - Install a package.
 	- python3 -m pip install --upgrade <package> - Upgrade a package.
 	- *python3 -m pip uninstall <package> - Remove a package.
