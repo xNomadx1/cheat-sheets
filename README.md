@@ -2,6 +2,8 @@
 
 Small command reference sheets for common tools and workflows.
 
+A leading `*` marks a command that deletes or discards something.
+
 ## Files
 
 - `bash_commands.md` - Basic shell navigation, files, redirection, variables, shortcuts, and jobs.
