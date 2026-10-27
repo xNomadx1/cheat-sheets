@@ -35,7 +35,45 @@
 	- grep "<text>" <file> - Search for text in a file.
 	- grep -R "<text>" <dir> - Search recursively in a directory.
 	- grep -n "<text>" <file> - Search with line numbers.
+	- grep '<pattern>' <file> - Single-quote the pattern so the shell leaves *, ?, and [] alone.
+	- grep -i "<text>" <file> - Search without matching case.
+	- grep -w "<text>" <file> - Match a whole word.
+	- grep -x "<text>" <file> - Match an entire line.
+	- grep -v "<text>" <file> - Print lines that do not match.
+	- grep -F "<text>" <file> - Search for the characters as typed.
+	- grep -E "<pattern>" <file> - Search with an extended regular expression.
+	- grep -nE "cat|dog" <file> - Match either pattern. With -E, | + ? () and {} need no backslash.
+	- grep -n "a\+" <file> - Match one or more of the previous item. In a basic pattern, + ? () | and {} need a backslash.
+	- grep -n "\.py" <file> - Match a period by escaping the dot.
+	- grep -e "<text>" -e "<text>" <file> - Search for more than one pattern.
+	- grep -e "-<text>" <file> - Search for a pattern that starts with a dash.
+	- grep -f <patterns> <file> - Read one pattern per line from a file.
+	- grep -o "<pattern>" <file> - Print only the matched text.
+	- grep -c "<text>" <file> - Count matching lines per file.
+	- grep -l "<text>" <file> - Print the filename when it contains a match.
+	- grep -Rl "<text>" <dir> - List files under a directory that contain a match.
+	- grep -L "<text>" <file> - Print the filename when it contains no match.
+	- grep -m <num> "<text>" <file> - Stop after a set number of matches in each file.
+	- grep -A <num> "<text>" <file> - Print lines after each match.
+	- grep -B <num> "<text>" <file> - Print lines before each match.
+	- grep -C <num> "<text>" <file> - Print lines before and after each match. A match uses a colon. Context uses a dash.
+	- grep -H "<text>" <file> - Always print the filename with each match.
+	- grep -h "<text>" <file> - Never print the filename with each match.
+	- grep -q "<text>" <file> - Print nothing. Exit 0 on a match, 1 with no match, and 2 on an error.
+	- grep -s "<text>" <file> - Hide errors for missing or unreadable files.
+	- grep -a "<text>" <file> - Search a binary file as text.
+	- grep -I "<text>" <file> - Skip binary files.
+	- grep -R --include="<glob>" "<text>" <dir> - Recurse and search only matching filenames.
+	- grep -R --exclude="<glob>" "<text>" <dir> - Recurse and skip matching filenames.
+	- grep -R --exclude-dir=<name> "<text>" <dir> - Recurse and skip a directory.
+	- grep --color=auto "<text>" <file> - Highlight the match when output is a terminal.
+	- grep -Rni "<text>" <dir> - Recurse, show line numbers, and ignore case.
+	- zgrep "<text>" <file.gz> - Search inside a gzip file.
 	- rg "<text>" - Fast recursive text search with ripgrep.
+	- rg -n "<text>" - Search with ripgrep and show line numbers.
+	- rg -n -t <type> "<text>" - Search one ripgrep file type, such as rust or py.
+	- rg -n -w "<text>" - Match a whole word with ripgrep.
+	- rg -n -F "<text>" - Search for literal text with ripgrep.
 	- find <path> -name "<name>" - Find files by name.
 	- which <command> - Show the path to a command.
 	- whereis <command> - Show binary, source, and man page locations.
